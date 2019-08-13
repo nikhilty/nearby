@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Megrim|Montserrat:400,600|Raleway:400,700" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+<!--    &callback=initMap-->
+    
+    <main role=main>
+        <div class="" id="start-page">
+            <header class="row" role="banner">
+                <img src="img/nearby.gif" alt="This is my animated image"  width="20%" style = float:left>
+                <p> Check out the interesting places around you...</p>
+            </header>
+        </div>
+        <br />
+         
+        <select id="radius" name="radius" class="form-control input-sm disabled hide" onChange="this.changeRadius">
+            <option key=500 value=500>500 meters</option>
+            <option key=1000 value=1000>1000 meters</option>
+            <option key=2000 value=2000>2000 meters</option>
+            <option key=5000 value=5000>5000 meters</option>
+            <option key=10000 value=10000>10000 meters</option>
+
+        </select>
+
+        <nav role="navigation" class="navigation hide" id="results-navigation">
+            <div class="options row">
+
+                <button class="category-button" id="toppicks-button">TOPPICKS</button>
+                <button class="category-button" id="food-button">FOOD</button>
+                <button class="category-button" id="nightlife-button">NIGHTLIFE</button>
+                <button class="category-button" id="shops-button">SHOPS</button>
+                <button class="category-button" id="outdoors-button">OUTDOORS</button>
+                <button class="category-button" id="entertainment-button">ARTS</button>
+            </div>
+        </nav>
+        </section>
+    </main>
+    
+    <div id="map" style="display: none"></div>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ5hTzcWKwWTTgbQzWFtcgiRz1gpLxCxM">
+</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</body>
+
+</html>
